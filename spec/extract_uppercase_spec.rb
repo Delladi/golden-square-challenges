@@ -5,6 +5,8 @@ RSpec.describe "extract uppercase method" do
         expect(extract_uppercase("")).to eq []
     end 
 
-    #it ""
+    it "returns an empty list if given a string with no uppercase" do
+        expect(extract_uppercase("hello world")).to eq []
+    end 
 
 end
