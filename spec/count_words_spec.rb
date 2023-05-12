@@ -7,7 +7,7 @@ RSpec.describe "it takes a string as an argument" do
     end
 
     it "returns the number of words" do
-        result = count_words("Hello world Della")
-        expect(result).to eq 3
+        result = count_words("Hello world Della today")
+        expect(result).to eq 4
     end
 end 
