@@ -13,4 +13,7 @@ RSpec.describe "extract uppercase method" do
         expect(extract_uppercase("hello WORLD")).to eq ["WORLD"]
     end 
 
+    it "returns uppercase words given a string with only upper cases" do
+        expect(extract_uppercase("HELLO WORLD")).to eq ["HELLO", "WORLD"]
+    end 
 end
