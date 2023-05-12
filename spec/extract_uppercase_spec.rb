@@ -16,4 +16,8 @@ RSpec.describe "extract uppercase method" do
     it "returns uppercase words given a string with only upper cases" do
         expect(extract_uppercase("HELLO WORLD")).to eq ["HELLO", "WORLD"]
     end 
+
+    it "does not extract mixed case words" do
+        expect(extract_uppercase("HeLLo WorLD")).to eq []
+    end 
 end
