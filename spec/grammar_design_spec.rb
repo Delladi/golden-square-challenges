@@ -13,9 +13,15 @@ RSpec.describe "program that checks grammar design" do
         end
     end
 
-    context "given a sentense without caputal letter and with full stop" do
+    context "given a sentense without capital letter and with full stop" do
         it "returns false" do 
         expect(grammar_design("hello world.")).to eq false
+        end
+    end
+
+    context "given a sentense with capital letter and without full stop" do
+        it "returns false" do 
+        expect(grammar_design("Hello world")).to eq false
         end
     end
 end
