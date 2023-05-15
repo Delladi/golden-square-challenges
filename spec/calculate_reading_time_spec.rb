@@ -8,10 +8,10 @@ RSpec.describe "it calculates the reading time method" do
         end 
     end 
 
-        context "given a text for one word" do
+        context "given a text of under two hundred words" do
             it "returns one" do
-                result = calculate_reading_time("one")
+                result = calculate_reading_time("one two")
                 expect(result).to eq 1
         end 
     end
-end
+end    
