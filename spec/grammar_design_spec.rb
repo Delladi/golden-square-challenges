@@ -36,4 +36,10 @@ RSpec.describe "program that checks grammar design" do
         expect(grammar_design("hello world")).to eq false
        end
     end
+
+    context "given a sentense with UPPERCASE first word" do
+        it "returns true" do 
+         expect(grammar_design("HELLO world.")).to eq true
+        end
+     end
 end
