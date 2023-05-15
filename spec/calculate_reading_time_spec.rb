@@ -14,4 +14,11 @@ RSpec.describe "it calculates the reading time method" do
                 expect(result).to eq 1
         end 
     end
-end    
+
+    context "given a text of two hundred words" do
+        it "returns one" do
+            result = calculate_reading_time("one " * 200)
+            expect(result).to eq 1
+        end 
+    end 
+end
