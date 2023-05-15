@@ -46,11 +46,7 @@ calculate_reading_time(two_hundred_words)
 calculate_reading_time(three_hundred_words)
 # => 2
 
-calculate_reading_time(four_hundred_words)
-# => 2
 
-calculate_reading_time(five_thousands_words)
-# => 25
 '''
 ## 4. Implement the Behaviour
 cle
