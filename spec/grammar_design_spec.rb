@@ -25,12 +25,6 @@ RSpec.describe "program that checks grammar design" do
         end
     end
 
-    #context "given a sentense with capital letter and with question mark" do
-       #it "returns true" do 
-       #expect(grammar_design("Hello world?")).to eq true
-       # end
-    #end
-
     context "given a sentense neither capital letter or full stop" do
        it "returns false" do 
         expect(grammar_design("hello world")).to eq false
@@ -40,6 +34,12 @@ RSpec.describe "program that checks grammar design" do
     context "given a sentense with UPPERCASE first word" do
         it "returns true" do 
          expect(grammar_design("HELLO world.")).to eq true
+        end
+     end
+
+     context "given a correct sentense with an exclamation mark at the end" do
+        it "returns true" do 
+         expect(grammar_design("Hello world!")).to eq true
         end
      end
 end
