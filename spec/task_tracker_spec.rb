@@ -13,4 +13,10 @@ RSpec.describe "Task tracker method" do
         expect(task_tracker("Hello #TODO")).to eq true 
         end 
     end
+
+    context "given a string that doesn't includes #TODO " do
+        it " it returns false" do
+        expect(task_tracker("Hello")).to eq false 
+        end 
+    end
 end
