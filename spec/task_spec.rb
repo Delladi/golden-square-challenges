@@ -7,4 +7,12 @@ RSpec.describe "task method" do
             # The test should raise an error saying the string is empty.
         end
     end
+
+    context "String includes #TODO" do
+        it "return true" do
+            expect(task("Hello #TODO")).to eq true 
+            # The test should eq true as the string contains #TODO.
+        end
+    end
+
 end
