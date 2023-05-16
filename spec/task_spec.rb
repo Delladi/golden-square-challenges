@@ -15,4 +15,11 @@ RSpec.describe "task method" do
         end
     end
 
+    context "given a string that doesn't includes #TODO" do
+        it "return false" do
+            expect(task("hello")).to eq false 
+            # The test should eq false as the string does not contains #TODO.
+        end
+    end
+
 end

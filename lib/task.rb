@@ -5,5 +5,8 @@ def task(text)
 
     if text.include? ("#TODO")
         return true
-    end   
+    else 
+        return false
+    end
+
 end
