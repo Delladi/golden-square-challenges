@@ -16,7 +16,7 @@ class DiaryEntry
       @contents.split(" ").length
     end
   
-    def reading_time(wpm) 
+    def reading_time(wpm)
         fail "Error! Reading speed should be above zero!" unless wpm > 0
         return (count_words / wpm.to_f).ceil
         # wpm is an integer representing the number of words the
@@ -25,7 +25,9 @@ class DiaryEntry
       # for the contents at the given wpm.
     end
   
-    def reading_chunk(wpm, minutes) # `wpm` is an integer representing the number
+    def reading_chunk(wpm, minutes) 
+        @contents
+        # `wpm` is an integer representing the number
                                     # of words the user can read per minute
                                     # `minutes` is an integer representing the
                                     # number of minutes the user has to read
