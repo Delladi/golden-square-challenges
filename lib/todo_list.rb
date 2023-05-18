@@ -1,5 +1,13 @@
 class TodoList
+    def initialize
+        @task = []
+    end
+
+    def add(task)
+        @task << task
+    end
+
     def list
-        return []
+        return @task
     end
 end
