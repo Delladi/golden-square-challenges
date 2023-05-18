@@ -54,7 +54,15 @@ RSpec.describe DiaryEntry do
                 diary_entry = DiaryEntry.new("my_title", "one two three")
                 diary_entry.reading_chunk(2, 1)
                 expect(diary_entry.reading_chunk(2, 1)).to eq "three"
-                end
+            end
+            #now it calls the previous two diary_entry to work through & get to the end
+            it "restarts after reading the whole contents." do
+                diary_entry = DiaryEntry.new("my_title", "one two three")
+                diary_entry.reading_chunk(2, 1)
+                diary_entry.reading_chunk(2, 1)
+                expect(diary_entry.reading_chunk(2, 1)).to eq "one two"
+            end
+
         end
     end
 end
