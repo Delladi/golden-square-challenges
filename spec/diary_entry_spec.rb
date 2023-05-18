@@ -49,6 +49,12 @@ RSpec.describe DiaryEntry do
             diary_entry = DiaryEntry.new("my_title", "one two three")
             expect(diary_entry.reading_chunk(2, 1)).to eq "one two"
             end
+
+            it "returns the readable chunk next time we are asked." do
+                diary_entry = DiaryEntry.new("my_title", "one two three")
+                diary_entry.reading_chunk(2, 1)
+                expect(diary_entry.reading_chunk(2, 1)).to eq "three"
+                end
         end
     end
 end
