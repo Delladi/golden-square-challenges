@@ -7,6 +7,10 @@ class TodoList
         @task << task
     end
 
+    def complete(task)
+        @task.delete(task)
+    end
+
     def list
         return @task
     end
