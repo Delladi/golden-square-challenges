@@ -15,7 +15,8 @@ class DiaryEntry
     end
   
     def count_words
-        @contents.split(" ").length
+        return 0 if @contents.empty?
+        return @contents.count(" ") + 1
       # Returns the number of words in the contents as an integer
     end
   
