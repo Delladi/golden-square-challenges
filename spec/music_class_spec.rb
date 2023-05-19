@@ -10,7 +10,7 @@ RSpec.describe Music do
     end
 
     context "given one track list" do
-        it "returns the music track" do
+        it "adds & returns the music track" do
         music_tracks = Music.new
         music_tracks.add("Don't stop me now")
         expect(music_tracks.list).to eq ["Don't stop me now"]
