@@ -8,5 +8,14 @@ RSpec.describe Music do
          expect(music_tracks.list).to eq []
         end
     end
+    context "when given one track list" do 
+        it "adds and returns an empty list" do
+        music_tracks = Music.new
+        music_tracks.add("Don't stop me now")
+     expect(music_tracks.list).to eq ["Don't stop me now"]
+    end
+end
+
+
 end
 end
