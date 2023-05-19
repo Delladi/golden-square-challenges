@@ -20,6 +20,8 @@ RSpec.describe "integration" do
         diary.add(diary_entry1)
         diary.add(diary_entry2)
         expect(diary.count_words).to eq 5
+    end
+end
 
          
   end
