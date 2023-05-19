@@ -11,5 +11,16 @@ RSpec.describe "integration" do
         diary.add(diary_entry2)
         expect(diary.all).to eq [diary_entry1, diary_entry2]
     end
+
+    describe "#count words" do
+    it "count the words in all diary entries" do
+        diary = Diary.new
+        diary_entry1 = DiaryEntry.new("my title", "my contents")
+        diary_entry2 = DiaryEntry.new("my title 2", "my contents 2")
+        diary.add(diary_entry1)
+        diary.add(diary_entry2)
+        expect(diary.count_words).to eq 5
+
+         
   end
 end
