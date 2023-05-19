@@ -1,7 +1,7 @@
 
 # {{PROBLEM}} Method Design Recipe
 
-
+design for a single - class program
 
 ## 1. Describe the Problem
 
@@ -56,11 +56,12 @@ music_tracks.add("Dandelions")
 music_tracks.add("Otra Luna")
 music_tracks.add("I code all night")
 music_tracks.list # => ["Don't stop me now", "Dandelions", "Otra Luna", "I code all night"]
+
 # 5
-todo_list = TodoList.new 
-todo_list.add("")
+#todo_list = TodoList.new 
+#todo_list.add("")
 #todo_list.cempty?()
-todo_list.list # => fails as there's no track in the string
+#todo_list.list # => fails as there's no track in the string
 
 ```
 
